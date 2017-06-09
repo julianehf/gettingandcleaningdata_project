@@ -15,6 +15,9 @@
 * Mag means that the magnitude of the signals were calculated using Euclidian norm
 (timebodyaccelerometermag, timegravityaccelerometermag, timebodyaccelerometerjerkmag, timebodygyroscopemag, timebodygyroscopejerkmag).
 * FFT means that FFT were performed on signals. 
+* Units : Features are normalized and bounded within [-1,1].
+ 
+*
 
 * "timebodyaccelerometer-mean-x"
 * "timebodyaccelerometer-mean-y"
