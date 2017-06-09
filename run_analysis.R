@@ -122,6 +122,6 @@ data_simplified = ddply(data, .(subject,activity), numcolwise(mean))
 sets_ds = ddply(data, .(subject,activity), catcolwise(unique))$sets # to make sure that we still have the column SETS to know if subject is from TRAIN or TEST set
 data_simplified=cbind(data_simplified,sets_ds)
 
+write.table(names(data),'../../submission/colnames.txt',row.name=FALSE)
 
 write.table(data_simplified,"../../submission/data_simplified.txt",row.name=FALSE)
-write.table(names(data),'../../submission/colnames.txt',row.name=FALSE)
