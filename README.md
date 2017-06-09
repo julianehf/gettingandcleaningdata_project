@@ -1,5 +1,12 @@
 # gettingandcleaningdata_project
 
+#  list of files
+* run_analysis.R : see description below
+* CodeBook.md : indicate all the variables and summaries calculated, along with units, and any other relevant information
+
+
+
+
 ## aim of the function
 The aim of the function is to collect, edit and clean data sets from the accelerometers from the Samsung Galaxy S smartphone. 
 
