@@ -1,4 +1,17 @@
 rm(list=ls())
+
+
+urlfile = "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+
+if(!file.exists('project')){
+        dir.create('project')
+}
+download.file(urlfile,"project/datasets.zip",method='curl')
+
+unzip('project/datasets.zip',exdir='project/')
+
+
+
 setwd('UCI HAR Dataset')
 
 #################################################################
@@ -111,3 +124,4 @@ data_simplified=cbind(data_simplified,sets_ds)
 
 
 write.table(data_simplified,"../../submission/data_simplified.txt",row.name=FALSE)
+write.table(names(data),'../../submission/colnames.txt',row.name=FALSE)
